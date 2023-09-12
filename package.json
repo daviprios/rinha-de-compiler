@@ -1,0 +1,16 @@
+{
+  "name": "bun",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun ./src/index.ts ./mock/sum.json",
+    "devc": "clear && bun ./src/index.ts ./mock/sum.json",
+    "testAll": "bun ./src/index.ts ./mock/sum.json && bun ./src/index.ts ./mock/fib.json && bun ./src/index.ts ./mock/combination.json"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
